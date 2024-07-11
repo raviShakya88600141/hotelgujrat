@@ -1,86 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-          <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Hotel Gujrat</title>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-                    crossorigin="anonymous" />
-          <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
+<!-- icon list--><!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Stylesheets-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Lato:400,700,400italic%7CPoppins:300,400,500,700"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
           <div class="login-img">
                     <div class="login-card">
                               <form class="login-form">
-                                        <h4 class="mb-4">Create an account</h4>
+                                        <h4 class="mb-5">Create an account</h4>
                                         <div class="row">
-                                                  <div class="col-6"> <input type="name" class="form-control mb-3"
-                                                                      placeholder="Name"></div>
-                                                  <div class="col-6"><input type="email" class="form-control mb-3"
-                                                                      placeholder="Email Address"></div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-first-name"
+                                                type="text"
+                                                name="name"
+                                                data-constraints="@Required"
+                                              />
+                                              <label class="form-label" for="contact-first-name"
+                                                >Your name</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-email"
+                                                type="email"
+                                                name="email"
+                                                data-constraints="@Email @Required"
+                                              />
+                                              <label class="form-label" for="contact-email"
+                                                >E-mail</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-last-name"
+                                                type="text"
+                                                name="phone"
+                                                data-constraints="@Numeric"
+                                              />
+                                              <label class="form-label" for="contact-last-name"
+                                                >Phone</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-address"
+                                                type="address"
+                                                name="address"
+                                                data-constraints="@address @Required"
+                                              />
+                                              <label class="form-label" for="contact-address"
+                                                >Address Line 1</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-address"
+                                                type="address"
+                                                name="address"
+                                                data-constraints="@address @Required"
+                                              />
+                                              <label class="form-label" for="contact-address"
+                                                >Address Line 2</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-City"
+                                                type="address"
+                                                name="City"
+                                                data-constraints="@City @Required"
+                                              />
+                                              <label class="form-label" for="contact-City"
+                                                >City</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-Zip"
+                                                type="text"
+                                                name="Zip"
+                                                data-constraints="@Required"
+                                              />
+                                              <label class="form-label" for="contact-Zip"
+                                                >Zip/Post Code</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap">
+                                              <input
+                                                class="form-input"
+                                                id="contact-address"
+                                                type="address"
+                                                name="address"
+                                                data-constraints="@address @Required"
+                                              />
+                                              <label class="form-label" for="contact-address"
+                                                >State/Reigon</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap form-wrap-validation">
+                                              <!--Select 2-->
+                                              <select
+                                                class="form-input select-filter"
+                                                data-minimum-results-search="-1"
+                                                data-placeholder="1"
+                                                data-constraints="@Required"
+                                              >
+                                                <option>country</option>
+                                                <option value="1">India</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-3">
+                                            <div class="form-wrap form-wrap-validation">
+                                              <!--Select 2-->
+                                              <select
+                                                class="form-input select-filter"
+                                                data-minimum-results-search="-1"
+                                                data-placeholder="1"
+                                                data-constraints="@Required"
+                                              >
+                                                <option>Gender</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          
+                                         
                                         </div>
-                                        <div class="row">
-                                                  <div class="col-6"> <input type="tel" class="form-control mb-3"
-                                                                      placeholder="Mobile"></div>
-                                                  <div class="col-6"> <input type="password" class="form-control mb-3"
-                                                                      placeholder="Password"></div>
-                                        </div>
-                                        <div class="row">
-                                                  <div class="col-6"> <input type="password" class="form-control mb-3"
-                                                                      placeholder="Confirm Password"></div>
-                                                  <div class="col-6"> <input type="text" class="form-control mb-3"
-                                                                      placeholder="Address Line 1 "></div>
-                                        </div>
-                                        <div class="row">
-                                                  <div class="col-6"> <input type="text" class="form-control mb-3"
-                                                                      placeholder="Address Line 2 "></div>
-                                                  <div class="col-6"> <input type="text" class="form-control mb-3"
-                                                                      placeholder="City"></div>
-                                        </div>
-                                        <div class="row">
-                                                  <div class="col-6"> <input type="text" class="form-control mb-3"
-                                                                      placeholder="Zip Code"></div>
-                                                  <div class="col-6"> <input type="text" class="form-control mb-3"
-                                                                      placeholder="State"></div>
-                                        </div>
-                                        <div class="row">
-                                                  <div class="col-6"> <select class="form-select"
-                                                                      aria-label="Default select example">
-                                                                      <option selected>India</option>
-
-                                                            </select></div>
-                                                  <div class="col-6 mb-3"><select class="form-select"
-                                                            aria-label="Default select example">
-                                                            <option selected>Male</option>
-                                                            <option selected>Female</option>
-
-                                                  </select>
-
-                                                  </div>
+                                     
+                              
 
                                                
-                                                  <a href="#">
-                                                            <p class="text-end text-secondary">Forget password</p>
-                                                  </a>
-                                                  <button type="submit" class="btn btn-blue w-100 rounded-0">Log
-                                                            In</button>
+                                                 
+                                                  <button class="button button-primary button-square button-block button-effect-ujarak" type="submit" fdprocessedid="2qi2do">
+                                                            <span>Register</span>
+                                                          </button>
                               </form>
-                              
                               <div class="bg-body-tertiary p-3 register-footer">
-                                        <p class="mb-0 text-secondary">Already a member?<a href="#"><span
-                                                                      style="color: #3ac4fa;">Login here</span></a>
-                                        </p>
-                              </div>
+                                <p class="mb-0 text-secondary">Already a member?<a href="#"><span
+                                                              style="color: #3ac4fa;"> Login here</span></a>
+                                </p>
+                      </div>
                     </div>
+                      
+                   
           </div>
-
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                    crossorigin="anonymous"></script>
-          <script src="https://kit.fontawesome.com/72db1c0e5b.js" crossorigin="anonymous"></script>
-</body>
-
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
